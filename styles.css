@@ -1,0 +1,82 @@
+/*Set html and body to fill the whole page. By forcing overflow-y, there will be no difference in rendering between browsers*/
+html, body {
+    height:  100%;
+    width:  100%;
+    overflow-y: visible;
+    overflow-x: hidden;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+}
+
+/*Ensures centering on the page*/
+.main {
+    height: 100%;
+    width: 100%;
+    position:  absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin:  0 auto;
+}
+
+.searchBar {
+    height: 20%;
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+/*Corrects centering issues by declaring it as an inline-block*/
+.search {
+    display: inline-block;
+    position:  relative;
+    top: 0;
+    bottom:  0;
+    margin: auto;
+}
+
+.searchBar {
+    position:  relative;
+    margin:  0 auto;
+}
+
+/*It is now obvious which option is hovered over*/
+.option:hover {
+    cursor:  pointer;
+    background-color: #ccc;
+}
+
+/*Dropdown menu has a set width now*/
+.btn {
+    width: 150px;
+}
+
+/*Images are all nicely sized and arranged*/
+img {
+    display: block;
+    height:  7em;
+    width:  auto;
+    position: relative;
+    margin: auto;
+}
+
+#PgrmButton, #EduButton{
+    display: block;
+    position: relative;
+}
+
+#PgrmButton {
+    margin:  0 auto;
+    margin-right:  0;
+}
+
+/*Heading parameters established*/
+.heading {
+    position: relative;
+    margin-top: 3%;
+    margin: auto;
+    font-size: 24px;
+    font-weight: 900;
+    text-align: center;
+}

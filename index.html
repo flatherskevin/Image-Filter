@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <!--Include Bootstrap CSS and Javascript CDNs hosted by Bootstrap-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <!--Include personal style sheet after Bootstrap so that there is no potential overwrite of styles.css-->
+        <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <title>KevinFlathers</title>
+    </head>
+    <body>
+        <div class="container main">
+            <div class="row heading">
+                <div class="col-xs-12">MembersFirst <span class="glyphicon glyphicon-grain"></span> Kevin Flathers</div>
+            </div>
+            <div class="row searchBar">
+                <!--Initialize dropdown menu for Program Type-->
+                <div class="dropdown col-xs-6 search">
+                    <button id="PgrmButton" class="btn btn-default dropdown-toggle" type="button" id="Program" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Program Type
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="Program">
+                        <li class="option" data-type="pgrm" data-program="pgrm">Program Type</li>
+                        <li class="option" data-type="pgrm" data-program="schlr">Scholarship</li>
+                        <li class="option" data-type="pgrm" data-program="loan">Loan</li>
+                    </ul>
+                </div>
+                <!--Initialize dropdown menu for Education Level-->
+                <div class="dropdown col-xs-6 search">
+                    <button id="EduButton" class="btn btn-default dropdown-toggle" type="button" id="Level" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Education Level
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="Level">
+                        <li class="option" data-type="edu" data-level="edu">Education Level</li>
+                        <li class="option" data-type="edu" data-level="kind">Kindergarten</li>
+                        <li class="option" data-type="edu" data-level="elem">Elementary</li>
+                        <li class="option" data-type="edu" data-level="mid">Middle School</li>
+                        <li class="option" data-type="edu" data-level="high">High School</li>
+                    </ul>
+                </div>
+            </div>
+            <!--Add all of the images into a 4x4 Bootstrap grid-->
+            <!--Each image is assigned random data for data-program and data-level-->
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-6" data-program="" data-level="kind">
+                    <img class="pic" src="img/balloon.jpg">
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6" data-program="" data-level="elem">
+                    <img class="pic" src="img/box.jpg">
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6" data-program="" data-level="mid">
+                    <img class="pic" src="img/darts.jpg">
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6" data-program="" data-level="high">
+                    <img class="pic" src="img/face.jpg">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-6" data-program="schlr" data-level="kind">
+                    <img class="pic" src="img/hug.jpg">
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6" data-program="schlr" data-level="elem">
+                    <img class="pic" src="img/laugh.jpg">
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6" data-program="loan" data-level="mid">
+                    <img class="pic" src="img/log.jpg">
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6" data-program="loan" data-level="high">
+                    <img class="pic" src="img/monster.jpg">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-6" data-program="schlr" data-level="">
+                    <img class="pic" src="img/music.jpg">
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6" data-program="loan" data-level="">
+                    <img class="pic" src="img/newspaper.jpg">
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6" data-program="schlr" data-level="">
+                    <img class="pic" src="img/party.jpg">
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6" data-program="loan" data-level="">
+                    <img class="pic" src="img/run.jpg">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-6" data-program="schlr" data-level="mid">
+                    <img class="pic" src="img/snow.jpg">
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6" data-program="loan" data-level="high">
+                    <img class="pic" src="img/stones.png">
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6" data-program="loan" data-level="mid">
+                    <img class="pic" src="img/voyage.jpg">
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-6" data-program="schlr" data-level="high">
+                    <img class="pic" src="img/wagon.jpg">
+                </div>
+            </div>
+        </div>
+
+
+        <!--Include JQuery 1.12.4, BoostrapJS, and script.js at end of page for faster initial rendering-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
